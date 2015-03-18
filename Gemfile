@@ -36,7 +36,7 @@ gem 'ruby-progressbar',   '~>1.5.1'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'libv8',            '3.16.14.3'
+  gem 'libv8',            '3.16.14.7'
   gem 'therubyracer',     '0.12.1'
   gem 'bootstrap-sass',   '2.3.2.2'
   gem 'sass-rails',       '~> 4.0'
