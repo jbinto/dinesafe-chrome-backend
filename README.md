@@ -8,9 +8,31 @@ The original project served as a backend for an iOS app. This fork is intended t
 
 Please see `README.upstream.md` for more information from the original author.
 
-## First run
+## Config
+
+Create `database.yml` and `settings.yml` from the examples.
 
 ```
+cd config
+cp settings.example.yml settings.yml
+cp database.sample.yml database.yml
+vi database.yml    # update as necessary
+```
+
+Set the secret token in `config/initializers/secret_token.rb`.
+
+```
+cd initializers
+cp secret_token.rb.example secret_token.rb
+rake secret | pbcopy 
+vi secret_token.rb
+
+# now paste the token 
+```
+
+## First run
+
+```bash
 createuser --superuser dinesafe_dev
 rake db:drop
 rake db:create
