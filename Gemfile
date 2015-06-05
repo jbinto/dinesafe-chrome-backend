@@ -35,13 +35,14 @@ gem 'ruby-progressbar',   '~>1.5.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
+group :development do
   gem 'libv8',            '3.16.14.7'
   gem 'therubyracer',     '0.12.1'
   gem 'bootstrap-sass',   '2.3.2.2'
   gem 'sass-rails',       '~> 4.0'
   gem 'coffee-rails',     '~> 4.0'
   gem 'uglifier',         '>= 2.5.0'
+  gem 'pry-rails'
 end
 
 group :test do
@@ -49,3 +50,4 @@ group :test do
   # https://github.com/thoughtbot/factory_girl_rails
   gem 'factory_girl_rails'
 end
+
