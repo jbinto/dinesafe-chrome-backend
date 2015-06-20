@@ -59,5 +59,16 @@ module Dinesafe
       landing/main.js
       landing/retina.js
     )
+
+    # CORS
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', 
+          :headers => :any, 
+          :methods => [:get]
+      end
+    end
+
   end
 end
